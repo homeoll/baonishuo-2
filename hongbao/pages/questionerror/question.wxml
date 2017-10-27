@@ -1,0 +1,103 @@
+<view class="container">
+ <ul>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>包你说-语音口令怎么玩？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>您可以设置一个带奖励的语音口令，好友说对口令才能领到奖励</li>
+      </ul> 
+   </li>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>我支付了但没有发出去？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>请在主页的【我的记录】中找到相应的记录，点击进入详情后点击【去转发】可把口令转发给好友或群，你也可以生成朋友圈分享图后发朋友圈</li>
+      </ul> 
+   </li>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>好友可以转发我的口令吗？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>可以的，您分享给好友或者转发到微信群的语音口令，其他好友均可再次转发</li>
+      </ul> 
+   </li>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>发口令会收取服务费吗？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>发语音口令会收取8%的服务费</li>
+      </ul> 
+   </li>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>未领取的金额会怎样处理？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>未领取的金额将于24小时后退至包你说小程序余额，同时，未领取金额的服务费也将退回90%</li>
+      </ul> 
+   </li>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>如何提现到微信钱包？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>在主页的【余额提现】或详情页的【去提现】均可跳转至余额提现页面进行提现，提现金额每次至少1元，每天至多提现三次</li>
+      </ul> 
+   </li>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>提现会收服务费吗？多久到账？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>提现不收取服务费；申请提现后会在1-5个工作日内转账到您的微信钱包</li>
+      </ul> 
+   </li>
+   <li class='box'>
+      <view class="left">
+          <text class='zi1'>如何联系客服？</text>
+      </view>
+      <view class="right">
+          <image src='../../images/icon.png'></image>
+      </view>
+       <ul class='jieshi'>
+          <li>您可以点击本页面右下角的聊天小图标来联系我们的在线客服；您也可以拨打我们的客服电话：020-29052945</li>
+      </ul> 
+   </li>
+ </ul>
+</view>
+<button type="primary" class='foot'> 
+  <image src='../../images/chat.png'></image>
+    <span>联系在线客服</span>
+</button>
+<view class='jubao'>
+    <span style='color:#989898'>v1.5.0</span>
+    <span style='color:#D3D3D3'>|</span>
+    <span style='color:#5B6E96'>举报</span>
+    <span style='color:#D3D3D3'>|</span>
+    <span style='color:#5B6E96'>成为合伙人</span>
+</view>

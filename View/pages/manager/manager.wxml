@@ -1,0 +1,106 @@
+<view class='title' wx:if='{{showPay}}'>{{manager}}</view>
+<view class='content' wx:if='{{showPay}}'>
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+
+<view class='send'>
+    <image src='../../images/tx.jpg'></image>
+    <view class='zi'><span style='color:#5B6E96'>canaan</span>发出的</view>
+    <view class='shuju'>
+      <view class='item'>
+          <view class='shang'>金额(元)</view>
+          <view class='xia'>10</view>
+      </view>    
+    </view>
+</view>  
+
+<view wx:if='{{!showPay}}'>
+   <view class='search'>
+      <span class='search-zi'><span>账户余额：￥{{managerFee}}</span></span>
+   </view>
+   <button type="primary" class='foot' bindtap='manager'  wx:if='{{showPay}}'> 
+     <image src='../../images/partner.png'></image>
+     <span>成为合伙人</span>
+   </button>
+   <button type="primary" class='foot' bindtap='withdraw'  wx:if='{{!showPay}}'> 
+     <image src='../../images/money2.png'></image>
+     <span>可提现【￥{{managerFee}}】</span>
+   </button>
+</view>
+            <view class="weui-cell weui-cell_switch" wx:if='{{showPay}}'>
+                <view class="weui-cell__ft">
+                    <switch bindchange="check"/><text>我已知晓以上规则</text>
+                </view>
+            </view>
+<button type="primary" class='foot' bindtap='manager'  wx:if='{{showPay}}' disabled='{{display}}'> 
+     <image src='../../images/partner.png'></image>
+     <span>成为合伙人</span>
+</button>
+<view class='money' wx:if='{{!showPay}}'>
+  <!-- 时间和搜索 -->
+    <view class='search search-item'>
+       <span>
+            <picker mode="date" fields='month' value="{{date}}" start="2017-09" end="2050-09" bindchange="bindDateChange">
+            <view class="search-time">{{date}}</view>
+            <image src='../../images/three.png'></image>
+            </picker>
+       </span>
+       <span class='shu'>|</span>
+       <span class='search-zi' bindtap="search"><image src='../../images/sousuo.png'></image><span>搜索</span></span>
+    </view>
+ <!-- 金额处理 -->
+ <view>
+    <view class='money-item' wx:for="{{log}}" wx:key="key" wx:for-item="row">
+        <block wx:if="{{row.type == 'bonus'}}">
+            <block wx:if="{{row.status == 'created'}}">
+                 <view class='money-item-state-image'><image src='{{row.fan.avatar}}'></image></view> 
+                   <view class='money-left-title'>
+                       <view class='money-left-title-top'>{{row.fan.nickname}}</view>
+                       <view class='money-left-title-bottom'>提现申请<text class='color-opacity'>|{{row.time}}</text></view>
+                   </view>
+                  <view class='money-item-num color-red'>-{{row.fee}}</view>
+            </block>
+            <block wx:if="{{row.status == 'normal'}}">
+                 <view class='money-item-state-image'><image src='{{row.fan.avatar}}'></image></view> 
+                     <view class='money-left-title'>
+                         <view class='money-left-title-top'>{{row.fan.nickname}}</view>
+                         <view class='money-left-title-bottom'>提现<text class='color-opacity'>|{{row.time}}</text></view>
+                     </view>
+                 <view class='money-item-num color-red'>-{{row.fee}}</view>
+            </block>
+        </block>
+        <block wx:if="{{row.type == 'manager_in'}}">
+            <view class='money-item-state-image'><image src='{{row.fan.avatar}}'></image></view> 
+                <view class='money-left-title'>
+                    <view class='money-left-title-top'>{{row.fan.nickname}}</view>
+                    <view class='money-left-title-bottom'>红包入账<text class='color-opacity'>|{{row.time}}</text></view>
+                </view>
+            <view class='money-item-num'>{{row.fee}}</view>
+        </block>
+    </view>
+    
+    
+    <!--<view class='money-item'>
+        <view class='money-item-state-image'><image src='../../images/bg.jpg'></image></view> 
+        <view class='money-left-title'>
+            <view class='money-left-title-top'>canan</view>
+            <view class='money-left-title-bottom'>在处理</view>
+        </view>
+        <view class='money-item-num color-red'>500</view>
+    </view>-->
+    
+    
+  </view>
+</view>
+
+
+<view class='jubao'>
+    <span style='color:#989898'>v1.5.0</span>
+    <span style='color:#D3D3D3'  wx:if='{{!showPay}}'>|</span>
+    <span style='color:#5B6E96' bindtap='showContent'  wx:if='{{!showPay}}'>查看规则</span>
+    <span style='color:#D3D3D3'  wx:if='{{!showPay}}'>|</span>
+    <span style='color:#5B6E96' bindtap='showUsers'  wx:if='{{!showPay}}'>我的用户</span>
+    <!--<span style='color:#D3D3D3'>|</span>
+    <span style='color:#5B6E96' bindtap='report'>举报</span>-->
+</view>

@@ -1,0 +1,11 @@
+<view class='title'>下级用户</view>
+ <view>
+    <view class='money-item' wx:for="{{log}}" wx:key="key" wx:for-item="row">
+            <view class='money-item-state-image'><image src='{{row.weixin.avatar}}'></image></view> 
+                <view class='money-left-title'>
+                    <view class='money-left-title-top'>{{row.weixin.nickname}}</view>
+                    <view class='money-left-title-bottom'>发送红包总额|<text class='color-opacity'>{{row.fee}}</text></view>
+                </view>
+            <view class='money-item-num'>{{row.time}}</view>
+    </view>
+  </view>

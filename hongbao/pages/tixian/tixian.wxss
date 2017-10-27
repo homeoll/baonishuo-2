@@ -1,0 +1,105 @@
+page{
+  background: #F2F2F2;
+}
+.jubao{
+  width: 100%;
+  height: 75rpx;
+  /* background: green; */
+  color:#5B6E96;
+  line-height: 75rpx;
+  font-size: 28rpx;
+  text-align: right;
+  position: relative;
+}
+.jubao .zi1{
+  margin-right: 30rpx;
+}
+.jubao .error{
+  width: 100%;
+  height: 50rpx;
+  background: #EA5F39;
+  position: absolute;
+  top:0;left:0;
+  margin:auto;
+  line-height: 50rpx;
+  text-align: center;
+  color:#fff;
+  display: none; 
+}
+.neirong{
+  width: 90%;
+  height: 600rpx;
+  background: #fff;
+  margin:0 auto;
+}
+.yue{
+  width: 100%;
+  height: 120rpx;
+  background:#FCFCFC;
+  box-sizing: border-box;
+  padding:0 46rpx;
+  line-height: 120rpx;
+  font-size: 28rpx;
+}
+.money{
+  margin-left:25%;
+  color:#9A9A9A;
+}
+.tixian{
+  box-sizing: border-box;
+  padding:46rpx;
+  width: 100%;
+  height: 480rpx;
+  /* background: pink; */
+}
+.tixian .title{
+  width: 100%;
+  height:60rpx;
+  /* background: green; */
+  font-size: 28rpx;
+}
+.tixian input{
+  width: 100%;
+  height:110rpx;
+  border-bottom:1rpx solid #929292;
+  font-size: 60rpx;
+  position: relative;
+  padding-left: 70rpx;
+  box-sizing: border-box;
+}
+.tixian input .zi2{
+  position: absolute;
+  top:0;
+  left:0;
+  margin:auto;
+  font-weight:bold;
+}
+.allmoney{
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 26rpx;
+  color: #9A9A9A;
+}
+button{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+}
+.zi3{
+  width: 100%;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 24rpx;
+  color: #9A9A9A;
+}
+.question{
+  width: 100%;
+  position: fixed;
+  bottom:10rpx;
+  left:0;
+  margin:auto;
+  text-align: center;
+  font-size: 24rpx;
+  color:#5B6E96;
+}

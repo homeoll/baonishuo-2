@@ -1,0 +1,26 @@
+<view class='jubao'>
+  <span bindtap="gojubao">举报</span>
+  <span style='margin-left:10rpx;margin-right:10rpx;'> | </span>
+  <span class='zi1' bindtap='manager'>{{manager}}</span>
+  <view class='error'>提现金额超账户余额</view>
+</view>
+<view class='neirong'>
+  <view class='yue'>
+    <span>账户余额</span> 
+    <span class='money'><span style='font-size:50rpx;'>{{fee == 0 ? '0.00' : fee}}</span>元</span>
+  </view>
+
+  <view class='tixian'>
+    <view class='title'>提现金额</view>
+    <input type='digit' value='{{tixian}}' bindinput="checkmoney" placeholder-class="phcolor"><view class='zi2'>￥</view></input>
+    <view class='allmoney'>
+        提现到微信钱包，<span style='color:#5B6E96;' bindtap="goAll">全部提现</span>
+    </view>
+  
+    <button type="primary" bindtap='withdraw'>提现</button>
+    <view class='zi3'>1-5个工作日到账</view>
+  </view>
+</view>
+<view class='question' bindtap="goquestion">
+  常见问题
+</view>

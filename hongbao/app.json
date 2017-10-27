@@ -1,0 +1,36 @@
+{
+  "pages":[
+        "pages/test/test",
+      "pages/partner/partner",
+    "pages/lingqu/lingqu",
+ 
+  
+    "pages/question/question",
+    
+    "pages/explain/explain",
+    "pages/shouye/shouye",
+ 
+
+    "pages/swiper/swiper",
+    "pages/sendmoney/sendmoney",
+   
+
+    "pages/jubao/jubao",
+
+    
+    "pages/zhuanfa/zhuanfa",
+    "pages/tixian/tixian",
+    "pages/index/index",
+    "pages/common/msg_fail",
+    "pages/common/msg_success"
+  ],
+ 
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff", 
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
+
+ 

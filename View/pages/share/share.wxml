@@ -1,0 +1,15 @@
+<view class='box'>
+    <!-- 背景图 -->
+    <image src='{{imagesrc}}' class='bg' bindtap='yulan' data-yulan="{{imagesrc}}" bindload="img_suc"></image>
+    <!-- 头像 -->
+    <view class='fenxiang'>
+        <view class='neirong'>
+             <button type="primary" class='anniu1' open-type="share">转发到群聊</button>
+             <button type="default" class='anniu2' bindtap='yulan'>生成朋友圈分享图</button>
+             <view class='back'>
+                <image src='../../images/back.png'></image>
+                <text bindtap="golast">返回</text>
+             </view>
+        </view>
+    </view>
+</view>

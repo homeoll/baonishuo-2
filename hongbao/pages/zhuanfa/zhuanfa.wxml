@@ -1,0 +1,18 @@
+<view class='box'>
+    <!-- 背景图 -->
+    <image src='../../images/bg.jpg' class='bg'></image>
+    <!-- 头像 -->
+    <image src='../../images/tx.jpg' class='tx'></image>
+    <view class='kouling'>东哥最帅</view>
+    <view class='yuan'><image src='../../images/'></image></view>
+    <view class='fenxiang'>
+        <view class='neirong'>
+             <button type="primary" class='anniu1'>转发到群聊</button>
+             <button type="default" class='anniu2'>生成朋友圈分享图</button>
+             <view class='back'>
+                <image src='../../images/back.png'></image>
+                返回
+             </view>
+        </view>
+    </view>
+</view>

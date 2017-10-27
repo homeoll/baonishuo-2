@@ -1,0 +1,5 @@
+<view class='title' wx:if='{{showPay}}'>{{manager}}</view>
+<view class='content' wx:if='{{showPay}}'>
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

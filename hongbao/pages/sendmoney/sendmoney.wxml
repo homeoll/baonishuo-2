@@ -1,0 +1,172 @@
+<view class="swiper-tab">  
+    <view class='box'>
+       <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">我发出的</view>
+    </view>  
+    <view class='box'>
+       <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我收到的</view>  
+     </view>  
+</view>  
+<swiper current="{{currentTab}}" class="swiper-box" duration="200" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindchange="bindChange">  
+    <!-- 发出 -->  
+    <swiper-item class='swiper-item'>  
+     <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"> 
+      <view class='send'>
+         <image src='../../images/tx.jpg'></image>
+         <view class='zi'><span style='color:#5B6E96'>canaan</span>发出的</view>
+         <view class='shuju'>
+            <view class='item'>
+                <view class='shang'>金额 (元)</view>
+                <view class='xia'>0</view>
+            </view> 
+              <view class='item'>
+                <view class='shang'>数量 (个)</view>
+                <view class='xia'>0</view>
+            </view> 
+         </view>
+      </view>  
+      <view class='xiangqing'>
+           <view class='xiangqing-item'>
+             <view class='xiangqing-item-son'>
+                <view class='shang'>
+                    <span style='float:left;'>谢谢老板</span>
+                    <span style='float:right;font-weight:bold'>1.00元</span>
+                </view>
+                <view class='xia'>
+                    <span style='float:left;'>9月11日 10：02</span>
+                    <span style='float:right;'>0/1</span>
+                </view>
+            </view>
+
+            <view class='xiangqing-item-son'>
+                <view class='shang'>
+                    <span style='float:left;'>谢谢老板</span>
+                    <span style='float:right;font-weight:bold'>1.00元</span>
+                </view>
+                <view class='xia'>
+                    <span style='float:left;'>9月11日 10：02</span>
+                    <span style='float:right;'>0/1</span>
+                </view>
+            </view>
+
+            <view class='xiangqing-item-son'>
+                <view class='shang'>
+                    <span style='float:left;'>谢谢老板</span>
+                    <span style='float:right;font-weight:bold'>1.00元</span>
+                </view>
+                <view class='xia'>
+                    <span style='float:left;'>9月11日 10：02</span>
+                    <span style='float:right;'>0/1</span>
+                </view>
+            </view>
+
+             <view class='xiangqing-item-son'>
+                <view class='shang'>
+                    <span style='float:left;'>xiexie</span>
+                    <span style='float:right;font-weight:bold'>1.00元</span>
+                </view>
+                <view class='xia'>
+                    <span style='float:left;'>9月11日 10：02</span>
+                    <span style='float:right;'>0/1</span>
+                </view>
+            </view>
+
+             <view class='xiangqing-item-son'>
+                <view class='shang'>
+                    <span style='float:left;'>xiexie</span>
+                    <span style='float:right;font-weight:bold'>1.00元</span>
+                </view>
+                <view class='xia'>
+                    <span style='float:left;'>9月11日 10：02</span>
+                    <span style='float:right;'>0/1</span>
+                </view>
+            </view>
+          </view>  
+      </view>
+
+      <view class='foot' bindtap='goquestion'>
+      常见问题
+      </view>
+     </scroll-view>
+    </swiper-item>  
+    <!-- 收到 -->  
+   <swiper-item class='swiper-item'>  
+     <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"> 
+      <view class='send'>
+         <image src='../../images/tx.jpg'></image>
+         <view class='zi'><span style='color:#5B6E96'>canaan</span>共收到</view>
+         <view class='shuju'>
+            <view class='item'>
+                <view class='shang'>金额 (元)</view>
+                <view class='xia'>0.00</view>
+            </view> 
+              <view class='item'>
+                <view class='shang'>数量 (个)</view>
+                <view class='xia'>0</view>
+            </view> 
+         </view>
+      </view>  
+      
+        <view class='xiangqing'>
+          <view class='xiangqing-item'>
+             <view class='xiangqing-item-son'>
+                <view class='left'>
+                    <image src='../../images/tx.jpg'></image>
+                </view>
+                <view class='right'>
+                   <view class='shang'>
+                      <span style='float:left;'>谢谢老板</span>
+                      <span style='float:right;font-weight:bold'>1.00元</span>
+                   </view>
+                   <view class='xia'>
+                      <span style='float:left;'>9月11日 10：02</span>
+                   </view>
+              </view>
+            </view>
+             <view class='xiangqing-item-son'>
+                <view class='left'>
+                    <image src='../../images/tx.jpg'></image>
+                </view>
+                <view class='right'>
+                   <view class='shang'>
+                      <span style='float:left;'>谢谢老板</span>
+                      <span style='float:right;font-weight:bold'>1.00元</span>
+                   </view>
+                   <view class='xia'>
+                      <span style='float:left;'>9月11日 10：02</span>
+                   </view>
+              </view>
+            </view> <view class='xiangqing-item-son'>
+                <view class='left'>
+                    <image src='../../images/tx.jpg'></image>
+                </view>
+                <view class='right'>
+                   <view class='shang'>
+                      <span style='float:left;'>谢谢老板</span>
+                      <span style='float:right;font-weight:bold'>1.00元</span>
+                   </view>
+                   <view class='xia'>
+                      <span style='float:left;'>9月11日 10：02</span>
+                   </view>
+              </view>
+            </view> <view class='xiangqing-item-son'>
+                <view class='left'>
+                    <image src='../../images/tx.jpg'></image>
+                </view>
+                <view class='right'>
+                   <view class='shang'>
+                      <span style='float:left;'>谢谢老板</span>
+                      <span style='float:right;font-weight:bold'>1.00元</span>
+                   </view>
+                   <view class='xia'>
+                      <span style='float:left;'>9月11日 10：02</span>
+                   </view>
+              </view>
+            </view>
+          </view> 
+      </view>
+      <view class='foot' bindtap='goquestion'>
+      常见问题
+      </view>
+      </scroll-view>
+    </swiper-item>  
+</swiper>  

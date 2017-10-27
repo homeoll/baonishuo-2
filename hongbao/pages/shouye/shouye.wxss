@@ -1,0 +1,157 @@
+page{
+  background: #F2F2F2;
+}
+.container{
+  width: 100%;
+  height:100%;
+}
+.content{
+  box-sizing: border-box;
+  width: 90%;
+  height:720rpx;
+  background-color:#fff;
+  margin:0 auto;
+  margin-top: 110rpx;
+  position: relative; 
+  box-shadow: 0rpx 5rpx 20rpx rgba(0,0,0,0.2);
+  padding:0 60rpx;
+}
+.content .photo{
+  width: 20%;
+  height: 136rpx;
+  /* background: green; */
+  border-radius: 50%;
+  position: absolute;
+  top:-68rpx;
+  left:0;
+  right:0;
+   margin:auto;  
+  float:left;
+}
+.photo image{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  border:4rpx solid #fff;
+}
+.content .neirong{
+  font-size: 32rpx;
+  width: 100%; 
+  height: auto;
+  margin-top: 70rpx;
+}
+.tanchu{
+  /* display: none; */
+  width: 82%;
+  height: 45rpx;
+  background: #D95940;
+  position: absolute;
+  top:75rpx;
+  margin:auto;
+  color: #fff;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.setting{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 48rpx;
+  position: relative;
+}
+.setting:nth-child(2){
+ margin-top:30rpx;
+}
+.setting text{
+  float: left;
+  margin-right: 50rpx;
+}
+.setting .text2{
+  color: #9A9A9A;
+  font-size: 25rpx;
+   float:left;
+  margin-top: 14rpx;
+  }
+.setting input{
+  width: 65%;
+  border-bottom: 1px solid #E4E4E4;
+ }
+.phcolor{  
+    color:#D4D4D4;  
+}
+
+
+ .setting image{
+   width: 30rpx;
+   height: 30rpx;
+   margin-left: -40rpx;
+   margin-top: 18rpx;
+ }
+ .tishi{
+   width: 100%;
+   text-align: center;
+   color: #9A9A9A;
+   font-size: 25rpx;
+   float:left;
+   margin-top: 70rpx;
+   margin-bottom: 30rpx;
+ }
+ button{
+   border-radius: 50rpx;
+   background: #D95940;
+   color:#fff;
+   font-size: 32rpx;
+   height: 90rpx;
+   line-height: 90rpx;
+ }
+
+
+.jubao{
+  margin-top:40rpx;
+  font-size: 28rpx;
+  color:#5D7197;
+}
+.jubao span{
+  margin-right:10rpx;
+  margin-left:10rpx;
+}
+.foot{
+  width: 100%;
+  height:120rpx;
+  box-shadow: 0rpx -1rpx 20rpx rgba(194,194,194,0.1);
+  background:#fff; 
+  position:fixed;
+  left:0;
+  bottom:0;
+  margin:auto;  
+}
+.foot .item{
+  width: 33.333%;
+  height: 100%;
+  float: left;
+  text-align: center;line-height: 130rpx;
+}
+.shang{
+  width: 100%;
+  height:65%;
+  float:left;
+  position: relative;
+}
+.shang image{
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  top:15rpx;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.xia{
+  width: 100%;
+  height:35%;
+  float:left;
+  color: #888888;
+  font-size: 24rpx;
+  line-height: 25rpx;
+}

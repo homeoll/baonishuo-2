@@ -1,0 +1,95 @@
+page{
+  widows: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #cd533c;
+}
+.box{
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.box .bg{
+  width: 100%;
+  height: 78%;
+}
+.box .tx{
+  width: 106rpx;
+  height: 106rpx;
+  position: absolute;
+  top:14rpx;
+  left: 0;
+  right: 0;
+  margin:auto;
+  border-radius: 5rpx;
+}
+.kouling{
+  width: 100%;
+  text-align: center;
+  height: auto;
+  position: absolute;
+  top:17%;
+  left: 0;
+  right: 0;
+  margin:auto;
+  font-size: 52rpx;
+  font-weight: bold;
+  color:#FDE3B0;
+}
+.yuan{
+  width: 244rpx;
+  height: 244rpx;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  top:26.5%;
+  left: 0;
+  right: 0;
+  margin:auto;
+}
+.fenxiang{
+  width:100%;
+  height: 350rpx;
+  /* background: pink; */
+  position: absolute;
+  top:53%;
+  left: 0;
+  right: 0;
+  margin:auto;
+}
+.neirong{
+  width: 90%;
+  height: 100%;
+  background: #fff;
+  margin:0 auto;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding:0 30rpx;
+  padding-top: 50rpx;
+}
+.anniu1{
+  height: 86rpx;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+.anniu2{
+  height: 86rpx;
+  font-size: 34rpx;
+  line-height: 86rpx;
+  margin-top: 30rpx;
+}
+.back{
+  width: 100%;
+  height: 50rpx;
+  /* background: pink; */
+  margin-top: 30rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color:#898989;
+}
+.back image{
+  width: 40rpx;
+  height: 30rpx;
+}

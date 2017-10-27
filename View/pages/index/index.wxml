@@ -1,0 +1,61 @@
+<view class="container">
+   <view class="content">
+       <view class='photo'>
+            <image src='{{userInfo.avatarUrl}}'></image> 
+       </view>
+       <view class='neirong'>
+          <view class='setting'>
+              <text>设置口令</text>
+              <input  maxlength='20' placeholder='谢谢老板' bindinput='titleInputEvent' placeholder-class="phcolor"></input>
+              <text class='text2'>小伙伴们说对口令就能获得随机的打赏</text>
+              <image src='../../images/kongquestion.png' bindtap='goexplain'></image>
+          </view>  
+          <view class='setting'>
+              <text>赏金 (元) </text>
+              <input placeholder='填写金额' type='digit'  bindinput="priceInputEvent" placeholder-class="phcolor"></input>
+          </view>  
+          <view class='setting'>
+              <text>数量 (个) </text>
+              <input placeholder='填写数量' type='number'  bindinput="numberInputEvent" placeholder-class="phcolor"></input>
+          </view>  
+          <view class='tishi'>
+             <text>需支付￥{{service}}服务费</text>
+             <block wx:if="{{fee > 0}}">
+                <text>,优先使用余额{{fee}}</text>
+             </block>
+           </view>
+           <button bindtap='submit'>{{button}}</button>
+       </view>
+      <view class='tanchu' wx:if="{{showAlert}}">
+          {{alertContent}}
+      </view>
+  </view>
+  <view class='jubao'><span bindtap='report' bindtap="goreport">举报</span> | <span bindtap='member'>{{manager}}</span></view>
+   <view class='foot'>
+     <view class='item' bindtap='mySend' bindtap="gosend">
+        <view class="shang">
+           <image src="../../images/jilu.png"></image> 
+        </view>
+        <view class="xia">
+         我的记录
+        </view>
+    </view>
+     <view class='item' bindtap='withDraw' bindtap="gotixian">
+        <view class="shang">
+           <image src="../../images/money.png"></image> 
+        </view>
+        <view class="xia">
+         余额提现
+        </view>
+    </view>
+     <view class='item' bindtap="goquestion">
+        <view class="shang">
+           <image src="../../images/question.png"></image> 
+        </view>
+        <view class="xia">
+         常见问题
+        </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,96 @@
+<view class="swiper-tab">  
+    <view class='box'>
+       <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">我发出的</view>
+    </view>  
+    <view class='box'>
+       <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">我收到的</view>  
+     </view>  
+</view>
+
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="200" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindchange="bindChange">  
+    <!-- 发出 -->       
+    <swiper-item class='swiper-item'>  
+      <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"> 
+
+      <view class='send'>
+         <image src='{{userInfo.avatarUrl}}'></image>
+         <view class='zi'><span style='color:#5B6E96'>{{userInfo.nickName}}</span>发出的</view>
+         <view class='shuju'>
+            <view class='item'>
+                <view class='shang'>金额(元)</view>
+                <view class='xia'>{{outCountPrice}}</view>
+            </view>    
+              <view class='item'>
+                <view class='shang'>数量 (个)</view>
+                <view class='xia'>{{outCountNumber}}</view>
+            </view> 
+         </view>
+      </view>  
+      
+      <view class='xiangqing'>
+         <view class='xiangqing-item'>
+              <view class='xiangqing-item-son'  wx:for="{{outList}}" wx:key="outList" wx:for-item="row" bindtap="gored" data-redid="{{row.id}}">
+              <view class='shang'>
+              <span style='float:left;'>{{row.void_content}}</span>
+              <span style='float:right;font-weight:bold'>{{row.fee}}元</span>
+              </view>
+              <view class='xia'>
+              <span style='float:left;'>{{row.timecreated}}</span>
+              <span style='float:right;'>{{row.number_now}}/{{row.number}}</span>
+              </view>
+              </view>
+       </view> 
+      </view>
+      <view class='foot' bindtap='goquestion'>
+      常见问题
+      </view>
+    </scroll-view>
+  </swiper-item>  
+
+
+
+    <!-- 收到 -->
+   <swiper-item class='swiper-item'>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}"> 
+      <view class='send'>
+         <image src='{{userInfo.avatarUrl}}'></image>
+         <view class='zi'><span style='color:#5B6E96'>{{userInfo.nickName}}</span>共收到</view>
+         <view class='shuju'>
+            <view class='item'>
+                <view class='shang'>金额 (元)</view>
+                <view class='xia'>{{inCountPrice}}</view>
+            </view> 
+              <view class='item'>
+                <view class='shang'>数量 (个)</view>
+                <view class='xia'>{{inCountNumber}}</view>
+            </view> 
+         </view>
+      </view>
+      
+        <view class='xiangqing'>
+          <view class='xiangqing-item' wx:for="{{inList}}" wx:key="inList" wx:for-item="row"  bindtap="gored" data-redid="{{row.parent}}"> 
+              <view class='xiangqing-item-son'>
+                <view class='left'>
+                    <image src='{{row.weixin.avatar}}'></image>
+                </view>
+                <view class='right'>
+                   <view class='shang'>
+                      <span style='float:left;'>{{row.weixin.nickname}}</span>
+                      
+                      <span style='float:right;font-weight:bold'>{{row.fee}}</span>
+                   </view>
+                   <view class='xia'>
+                      <span style='float:left;'>{{row.timecreated}}</span>
+                   </view>
+              </view>
+            </view> 
+          </view>
+       </view>
+      <view class='foot' bindtap='goquestion'>
+      常见问题
+      </view>
+      </scroll-view>
+    </swiper-item>  
+
+</swiper>  

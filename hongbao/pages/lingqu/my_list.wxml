@@ -1,0 +1,85 @@
+<view class='box'>
+    <view class='tx'>
+      <image src='{{avatar}}'></image>
+    </view>
+    <view class='nicheng'>{{nickname}}</view>
+    <view class='kouling'>
+        <image src='../../images/maikefeng.png'></image>
+        {{token}}
+    </view>
+    <view style='position:relative;'>
+    <block wx:if="{{status == 'created'}}">
+        <button type="primary" class='lingqu' bindtouchstart="startRecode" bindtouchend="endRecode"> 
+                按住说出以上口令领取赏金
+        </button>
+    </block>
+    <block wx:if="{{status == 'error'}}">
+        <button class='shixiao'> 
+            红包口令已经失效了
+        </button>
+    </block>
+        <block wx:if="{{status == 'zerro'}}">
+            <button class='shixiao'> 
+                赏金都被领完啦
+            </button>
+        </block>
+    <block wx:if="{{status == 'normal'}}">
+        <view class='money'> 
+             <span>{{my_fee}}</span>
+             <span style='font-size:34rpx;font-weight:400;'>元</span>
+        </view>>
+    </block>
+    </view>
+    
+    <view class='daohang'>
+        <view class='daohang-item' bindtap='gotixian'>
+            <image src='../../images/tixian.png'></image>
+            去提现
+        </view>
+        <view class='daohang-item' bindtap='gotoken'>
+            <image src='../../images/yuyin.png'></image>
+            发口令
+        </view>
+        <view class='daohang-item' bindtap='gozhuanfa'>
+            <image src='../../images/zhuanfa.png'></image>
+            <text >去转发</text>
+        </view>
+    </view>
+</view>
+<view class='jubao'>
+    <span class='left'>
+      共<span>{{fee}}</span>元,
+      领取<span>{{number_now}}</span>/<span>{{number}}</span>个
+      <block wx:if="{{time < time_now && if_my == '1'}}">
+      <span>,已退回<span>{{fee_now}}</span>元</span>
+      </block>
+    </span>
+    <span class='right'>
+      <span bindtap="goreport">举报</span>
+      <span class='shu'>|</span>
+     <span bindtap='manager'>成为合伙人</span>
+    </span>
+</view>
+<view class='xiangqing'>
+  <view class='xiangqing-item' wx:for="{{user_list}}" wx:key="user_list" wx:for-item="row">
+    <view class='zuo'><image src='{{row.user.avatar}}'></image></view>
+    <view class='zhong'>
+        <view class='nicheng'>{{row.user.nickname}}
+            <block wx:if="{{row.user.gender == '女'}}">
+           <image src='../../images/nv.png'></image>
+            </block>
+            <block wx:if="{{row.user.gender == '男'}}">
+           <image src='../../images/nan.png'></image>
+            </block>
+        </view>
+        <button class='yuyin' bindtap='bofang' data-play="{{row.void_url}}"><image src='{{active}}'></image></button>
+    </view>
+    <view class='you'>
+        <view class='qian'>{{row.fee}} 元</view>
+        <view class='time'>{{row.time}}</view>
+    </view>
+  </view>
+</view>
+<view class='mine'>
+<text bindtap='gomysend'>查看我的记录{{aaa}}</text>
+</view>

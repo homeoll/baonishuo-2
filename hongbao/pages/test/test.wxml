@@ -1,0 +1,14 @@
+<view class='send'>
+    <image src='../../images/tx.jpg'></image>
+    <view class='zi'><span style='color:#5B6E96'>canaan</span>发出的</view>
+    <view class='shuju'>
+      <view class='item'>
+          <view class='shang'>金额(元)</view>
+          <view class='xia'>10</view>
+      </view>    
+        <view class='item'>
+          <view class='shang'>数量 (个)</view>
+          <view class='xia'>10</view>
+      </view> 
+    </view>
+</view>  

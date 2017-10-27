@@ -1,0 +1,18 @@
+<view class='title'>红包手册</view>
+<view class='content'>1.掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言，它消除了不同计算机之间信息交流的障碍 \n\r2.因此，它是目前网络上应用最为广泛的语言，也是构成网页文档的主要语言，学好HTML是成为Web开发人员的基本条件。
+学好CSS是网页外观的重要一点，CSS可以帮助把网页外观做得更加美观。
+学习JavaScript的基本语法，以及如何使用JavaScript编程将会提高开发人员的个人技能。
+了解Unix和Linux的基本知识虽然这两点很基础，但是开发人员了解Unix和Linux的基本知识是有益无害的。
+了解Web服务器当你对Apache的基本配置，htaccess配置技巧有一些掌握的话，将来必定受益，而且这方面的知识学起来也相对容易。
+需要熟练掌握的技能
+熟悉版本控制系统的用法熟悉使用一种优秀的版本控制系统，你在实际工作中就会发现精通一种版本控制系统是很幸福的事情。
+学好Web框架当你掌握了HTML，服务器端脚本语言，CSS和JavaScript后，就应该找一个Web框架加快你的Web开发速度，使用框架可以节约你很多时间，如果你使用PHP，可选的框架有CakePHP，CodeIgniter，Zend等，Python程序员喜欢使用Django和 webpy，Ruby程序员喜欢使用RoR。</view>
+<button class='foot'> 
+  <image src='../../images/quxiao.png'></image>
+    <span>返回上一页</span>
+</button>
+<view class='jubao'>
+    <span style='color:#989898'>v1.5.0</span>
+    <span style='color:#D3D3D3'>|</span>
+    <span style='color:#5B6E96' bindtap='gojubao'>举报</span>
+</view>

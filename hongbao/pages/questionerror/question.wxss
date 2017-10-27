@@ -1,0 +1,87 @@
+page{
+  background: #F2F2F2;
+  padding:34rpx;
+  box-sizing: border-box;
+ }
+ ul{
+   width: 100%;
+   height: auto;
+ }
+.box{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin-top: 30rpx;
+  float: left;
+}
+.box .left{
+  width: 80%;
+  height: 100%;
+  float:left;
+  padding-left:20rpx;
+   box-sizing: border-box;
+}
+.left .zi1{
+  font-size: 30rpx;
+  line-height: 90rpx;
+}
+.box .right{
+  width: 20%;
+  height: 100%;
+  float:right;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+}
+.right image{
+  width: 40rpx;
+  height: 30rpx;
+  float: right;
+  margin-top:25%;
+}
+.jieshi{
+  width: 100%;
+  height: auto;
+  /* background: green; */
+  float: left;
+  padding:20rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  border-top:1px solid #CECECE;
+  /* display: none; */
+
+  
+}
+.foot{
+  width: 100%;
+  margin-top:50rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  position: relative;
+}
+.foot image{
+  width: 50rpx;
+  height:50rpx;
+  position: absolute;
+  left:32%;
+  top:23%;
+  margin:auto;
+}
+.foot span{
+  font-size: 32rpx;
+  position: absolute;
+  left:40%;
+  margin:auto;
+}
+.jubao{
+  width:100%;
+  height: auto;
+
+  margin-top: 70rpx;
+  text-align: center;
+}
+.jubao span{
+  font-size:24rpx;
+  display:inline-block;
+  margin-right: 10rpx;
+  line-height: 30rpx;
+}

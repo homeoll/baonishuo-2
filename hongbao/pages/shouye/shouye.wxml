@@ -1,0 +1,57 @@
+<view class="container">
+   <view class="content">
+       <view class='photo'>
+            <image src='../../images/tx.jpg'></image> 
+       </view>
+        <view class='tanchu'>
+            只能输入中文字符
+        </view>
+       <view class='neirong'>
+          <view class='setting'>
+              <text>设置口令</text>
+              <input placeholder='谢谢老板' placeholder-class="phcolor" type='text' maxlength='20' bindinput='titleInputEvent'></input>
+              <text class='text2'>小伙伴们说对口令就能获得随机的打赏</text>
+              <image src='../../images/kongquestion.png' bindtap='goexplain'></image>
+          </view>  
+          <view class='setting'>
+              <text>赏金 (元) </text>
+              <input placeholder='填写金额' placeholder-class="phcolor" type='number'></input>
+          </view>  
+          <view class='setting'>
+              <text>数量 (个) </text>
+              <input placeholder='填写数量' placeholder-class="phcolor" type='number'></input>
+          </view>  
+          <view class='tishi'>
+             <text>需支付￥0.00服务费，优先使用余额￥0.00</text>
+           </view>
+           <button bindtap='submit'>生成语音口令</button>
+       </view>
+  </view>
+  <view class='jubao'><span bindtap='gojubao'>举报</span> | <span bindtap='gopartner'>成为合伙人</span></view>
+   <view class='foot'>
+     <view class='item' bindtap='gosendmoney'>
+        <view class="shang">
+           <image src="../../images/jilu.png"></image> 
+        </view>
+        <view class="xia">
+         我的记录
+        </view>
+    </view>
+     <view class='item' bindtap='gotixian'>
+        <view class="shang">
+           <image src="../../images/money.png"></image> 
+        </view>
+        <view class="xia">
+         余额提现
+        </view>
+    </view>
+     <view class='item' bindtap='goquestion'>
+        <view class="shang">
+           <image src="../../images/question.png"></image> 
+        </view>
+        <view class="xia">
+         常见问题
+        </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,76 @@
+<view class='box'>
+    <view class='tx'>
+      <image src='../../images/tx.jpg'></image>
+    </view>
+    <view class='nicheng'>王五</view>
+    <view class='kouling'> 
+         <image src='../../images/mai.png'></image>果果我是果果我果果我是果果我
+    </view>
+    <view style='position:relative;'>
+      <!-- 领取前 -->
+      <button type="primary" class='lingqu' bindtap="record" > 
+        按住说出以上口令领取赏金
+      </button>
+      <!-- 失效 -->
+       <button class='shixiao'> 
+        红包口令已经失效了
+      </button>
+      <!-- 金额 -->
+      <view class='money'> 
+        <span>9.54</span>
+        <span style='font-size:34rpx;font-weight:400;'>元</span>
+      </view>
+    </view>
+    
+    <view class='daohang'>
+        <view class='daohang-item'>
+            <image src='../../images/tixian.png'></image>
+            去提现
+        </view>
+        <view class='daohang-item'>
+            <image src='../../images/yuyin.png'></image>
+            发口令
+        </view>
+        <view class='daohang-item'>
+            <image src='../../images/zhuanfa.png'></image>
+            去转发
+        </view>
+    </view>
+  <view class='chat-kuang'>
+      <image src='../../images/22.gif'></image>
+  </view>
+
+
+</view><!--box结束-->
+<view class='jubao'>
+    <span class='left'>
+      共<span>10.00</span>元,
+      领取<span>0</span>/<span>1</span>个
+      <span class='back'>,已退回<span>1.25</span>元</span>
+    </span>
+    <span class='right'>
+      <span>举报</span>
+      <span class='shu'>|</span>
+     <span>成为合伙人</span>
+    </span>
+</view>
+<view class='xiangqing'>
+  <view class='xiangqing-item'>
+    <view class='zuo'><image src='../../images/tx1.jpg'></image></view>
+    <view class='zhong'>
+        <view class='nicheng'>canaan
+           <image src='../../images/nv.png'></image>
+           <image src='../../images/nan.png'></image>
+        </view>
+        <button class='yuyin'>11"</button>
+    </view>
+    <view class='you'>
+        <view class='qian'>4.10元</view>
+        <view class='time'>9月11日 4:55</view>
+    </view>
+  </view>
+ </view>
+
+<view class='mine'>
+查看我的记录
+</view>

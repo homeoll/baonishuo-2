@@ -1,0 +1,10 @@
+<!--index.wxml-->  
+  <swiper class="swiper" indicator-dots="true" interval="5000" duration="200">  
+    <swiper-item>  
+    <image src='../../images/1.jpg'></image>
+    <image src='../../images/money.png'></image>
+    </swiper-item>  
+     <swiper-item>  
+     4444
+    </swiper-item>  
+  </swiper>

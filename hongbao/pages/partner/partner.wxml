@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class='title'>成为合伙人</view>
+  <view class='content'>掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言，它消除了不同计算机之间信息交流的障碍。因此，它是目前网络上应用最为广泛的语言，也是构成网页文档的主要语言，学好HTML是成为Web开发人员的基本条件。
+  学好CSS是网页外观的重要一点，CSS可以帮助把网页外观做得更加美观。
+  架有CakePHP，CodeIgniter，Zend等，Python程序员喜欢使用Django和 webpy，Ruby程序员喜欢使用RoR。</view>
+  <button type="primary" class='foot' > 
+    <image src='../../images/partner.png'></image>
+      <span>成为合伙人</span>
+  </button>
+  <view class='jubao'>
+      <span style='color:#989898'>v1.5.0</span>
+      <span style='color:#D3D3D3'>|</span>
+      <span style='color:#5B6E96' bindtap='gojubao'>举报</span>
+  </view>
+
+  <view class='pop-up'>
+      <view class='close'>X</view>
+      <input class='pop-up-input' placeholder='请输入您的姓名'></input>
+      <button class='pop-up-button'>提交</button>
+  </view>
+
+</view>

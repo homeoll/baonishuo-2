@@ -1,0 +1,27 @@
+<view class='title'>
+    请选择举报原因
+</view>
+<radio-group>
+  <radio value='radio1'><view class='zi'>欺诈</view></radio>
+  <radio value='radio2'><view class='zi'>色情</view></radio>
+  <radio value='radio3'><view class='zi'>政治谣言</view></radio>
+  <radio value='radio4'><view class='zi'>常识性谣言</view></radio>
+  <radio value='radio5'><view class='zi'>有诱导分享</view></radio>
+  <radio value='radio6'><view class='zi'>恶意营销</view></radio>
+  <radio value='radio7'><view class='zi'>隐私信息收集</view></radio>
+  <radio value='radio8'><view class='zi'>欺诈</view></radio>
+</radio-group>
+<view class='title'>
+    请填写您的个人信息，方便我们联系您
+</view>
+<view class='xinxi'>
+  <view class='xinxi-item'>
+    <text> 手机号</text> 
+    <input placeholder='选填' type='number'></input>
+  </view>
+   <view class='xinxi-item'>
+    <text> 微信号</text> 
+    <input placeholder='选填'></input>
+  </view>
+</view>  
+<button type='primary'>提交</button>
